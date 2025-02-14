@@ -16,6 +16,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    font-size: 16px;
   }
   .container {
     height: 100vh;
@@ -28,8 +30,8 @@
   }
   .envelope-wrapper > .envelope {
     position: relative;
-    width: 300px;
-    height: 230px;
+    width: 80vw;
+    height: 50vh;      
   }
   .envelope-wrapper > .envelope::before {
     content: "";
@@ -57,14 +59,17 @@
     position: absolute;
     right: 20%;
     bottom: 0;
-    width: 54%;
-    height: 80%;
+    width: 80%;
+    height: auto;
     background: var(--primary);
     text-align: center;
     transition: all 1s ease-in-out;
     box-shadow: 0 0 5px var(--shadow-color);
     padding: 20px 10px;
-  }
+    max-height: 90%;
+    box-sizing: border-box;
+
+}
   
   .envelope > .letter > .text {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -74,16 +79,17 @@
   }
   .heart {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     width: 15px;
     height: 15px;
     background: var(--heart-color);
     z-index: 4;
-    transform: translate(-50%, -20%) rotate(45deg);
+    transform: translate(-50%,);
     transition: transform 0.5s ease-in-out 1s;
     box-shadow: 0 1px 6px var(--shadow-color);
     cursor: pointer;
+  
   }
   .heart:before, 
   .heart:after {
