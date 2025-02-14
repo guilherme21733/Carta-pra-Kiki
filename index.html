@@ -5,23 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carta pra Kiki</title>
-    <link rel="stylesheet" href="stylr.css">
+    <link rel="stylesheet" href="style.css"> <!-- Corrigido o nome do arquivo CSS -->
 </head>
 <body>
-
-
     <div class="container">
         <div class="envelope-wrapper">
             <div class="envelope">
                 <div class="letter">
                     <div class="text">
-                        <strong>De: Guilherme <br>Para: kiki</strong>
+                        <strong>De: Guilherme <br>Para: Kiki</strong>
                         <p>
                             Sinto sua falta, mas sou grato por ter você na minha vida.
-Obrigado por ser tão especial e por alegrar meus dias, mesmo de longe. Não costumo dizer isso, mas quero que saiba o quanto você significa para mim.
-
-EU TE AMO!
-<div id="feliz">¡Feliz Día de San Valentín!</div>
+                            Obrigado por ser tão especial e por alegrar meus dias, mesmo de longe. Não costumo dizer isso, mas quero que saiba o quanto você significa para mim.
+                            <br><br>
+                            EU TE AMO!
+                            <div id="feliz">¡Feliz Día de San Valentín!</div>
                         </p>
                     </div>
                 </div>
@@ -34,6 +32,8 @@ EU TE AMO!
         envelope.addEventListener('click', () => {
             envelope.classList.toggle('flap');
         });
+        envelope.addEventListener('touchstart', () => {
+            envelope.classList.toggle('flap');
+        });
     </script>
 </body>
-</html>
